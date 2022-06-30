@@ -18,14 +18,15 @@ node_modules/.bin/webpack --watch
 # browse to http://localhost:8080/
 ```
 
-## Pushing to prod
+## Deploying to prod
 
 Published via Github pages atm, so build to `docs` using `webpack` and just push to `main` to publish.
 
 ```bash
 # simply build for prod
 NODE_ENV=production node_modules/.bin/webpack build
-or npm run prod
+# or
+npm run prod
 # now git commit and push to main
 ```
 
