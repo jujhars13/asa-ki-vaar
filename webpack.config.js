@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
-  mode: process.env?.NODE_ENV ? process.env?.NODE_ENV : "development",
+  mode: process.env?.NODE_ENV || "development",
   output: {
     filename: "js/main.js",
     path: path.resolve(__dirname, "docs"),
@@ -17,6 +17,8 @@ module.exports = {
       patterns: [
         { from: "src/css", to: path.resolve(__dirname, "docs/css") },
         { from: "src/img", to: path.resolve(__dirname, "docs/img") },
+        { from: "src/data", to: path.resolve(__dirname, "docs/data") },
+        { from: "src/fonts", to: path.resolve(__dirname, "docs/fonts") },
         {
           from: "src/favicon.ico",
           to: path.resolve(__dirname, "docs/favicon.ico"),
@@ -24,6 +26,10 @@ module.exports = {
         {
           from: "src/robots.txt",
           to: path.resolve(__dirname, "docs/robots.txt"),
+        },
+        {
+          from: "src/CNAME",
+          to: path.resolve(__dirname, "docs/CNAME"),
         },
       ],
     }),

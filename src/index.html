@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Asa Ki Vaar</title>
-  <meta name="description" content="Read Asa Ki Vaar in small chunks" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    integrity="sha256-djO3wMl9GeaC/u6K+ic4Uj/LKhRUSlUFcsruzS7v5ms=" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/custom.css" />
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Asa Ki Vaar - Read Gurbani in Chunks</title>
+  <meta name="author" content="Guru Arjan">
+  <meta name="description" content="Read popular Sikh scripture in small chunks">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" media="screen">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 </head>
 
-<body>
+<body class="bg-dark">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Asa Ki Vaar: <span class='section-number' id='section-number'></span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li> -->
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+
+    <button class='btn btn-secondary btn-lg prev-button'>Back</button>
+    <button class='btn btn-primary btn-lg next-button'>Next</button>
+
+    <div class='bani gurmukhi' id='bani'></div>
+
+    <button class='btn btn-secondary btn-lg prev-button'>Back</button>
+    <button class='btn btn-primary btn-lg next-button'>Next</button>
+  </div>
+
+  <div class="alert alert-danger d-none" role="alert" id='debug'></div>
+  <script src="js/scripts.js" data-rel-js></script>
+
 </body>
 
 </html>
