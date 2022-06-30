@@ -1,0 +1,35 @@
+{
+  "name": "asa-ki-vaar",
+  "version": "1.0.0",
+  "description": "Read Asa-Ki-Vaar in chunks",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "node_modules/.bin/webpack --watch",
+    "serve":"(cd docs && ../node_modules/.bin/reload -e \"html|js|css|json|yml\")",
+    "prod":"NODE_ENV=production node_modules/.bin/webpack build",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujhars13/asa-ki-vaar.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jujhars13/asa-ki-vaar/issues"
+  },
+  "homepage": "https://github.com/jujhars13/asa-ki-vaar#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
+    "eslint": "^8.18.0",
+    "html-webpack-plugin": "^4.5.1",
+    "prettier": "^2.2.1",
+    "reload": "^3.1.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
