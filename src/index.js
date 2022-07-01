@@ -1,7 +1,7 @@
 const parsedUrl = new URL(window.location.href);
-const bani = parsedUrl.searchParams.get('b') || 'sukhmani';
+const bani = parsedUrl.searchParams.get('b') || 'asa-ki-vaar';
 const section = Number(parsedUrl.searchParams.get('s')) || 1;
-const validGurbani = ['sukhmani'];
+const validGurbani = ['asa-ki-vaar'];
 
 (function ready(fn) {
   if (document.readyState != 'loading') {
